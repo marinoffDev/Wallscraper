@@ -1,2 +1,2 @@
 # Wallscraper
-Wallpaper scraper
+A simple wallpaper scraper.
