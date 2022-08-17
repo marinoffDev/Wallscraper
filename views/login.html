@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login to Wallscraper</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://ez-css.now.sh"">
+    </head>
+    <body style="background-color:darkslateblue">
+        <header>
+            <nav>
+                <ul>
+                    <a href="/" style="color:gold"><li>Wallscraper</li></a>
+                    <a href="/search" style="color:gold"><li>Search</li></a>
+                    <a href="/login" style="color:gold"><li>Login</li></a>
+                    <a href="/user" style="color:gold"><li>My Profile</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="/user" method="POST">
+                <input type="text" placeholder="Username..">
+                <input type="text" placeholder="Password..">
+                <button type="submit">Login</button>
+            </form>
+        </main>
+    </body>
+</html>
