@@ -4,10 +4,18 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+const bodyParser = require('body-parser');
+
+
+
 const searchRoutes = require('./routes/search')
 const loginRoutes = require('./routes/login')
 const userRoutes = require('./routes/user')
 const indexRoutes = require('./routes/index')
+
+
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, 'public')))
 
